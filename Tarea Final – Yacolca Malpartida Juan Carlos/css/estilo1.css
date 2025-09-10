@@ -1,0 +1,61 @@
+.normal{
+    font-style: normal;
+}
+.italica{
+    font-style: italic;
+}
+.negrita{
+    font-weight: bold;
+}
+
+.textoGrande{
+    font-size: 20px;
+}
+
+.textoRelativo{
+    font-size: 200%;
+}
+
+.impact{
+    font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+.comicSans{
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.centrar{
+    text-align: center;
+}
+.aLaDerecha{
+    text-align:right;
+}
+
+.interlineado{
+    line-height: 1.6;
+}
+
+.fondoFuerte{
+    background-color: rgb(135, 222, 161);
+}
+
+.imagenFondo{
+    background-image: url("../imagenes/star.jpg") ;
+}
+
+div{
+    border-top: solid 5px red;
+    border-right: solid 10px cyan;
+    border-bottom: solid 7px green;
+    border-left:solid 12px yellow;
+}
+
+p{
+    display: inline;
+    background-color: yellow;
+}
+
+span{
+    display: block;
+    background-color: grey;
+}
