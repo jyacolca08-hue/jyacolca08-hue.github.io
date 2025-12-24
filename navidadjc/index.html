@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carta Navideña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>🎄 ¡Feliz Navidad! 🎄</h1>
+    <!-- PAPÁ NOEL -->
+    <div class="santa-grande">🎅</div>
+    <!-- INGRESAR NOMBRE -->
+    <input type="text" id="nombre" placeholder="🎄Escribe tu nombre🎁">
+    <button onclick="mostrarSaludo()">✨ Ver mensaje</button>
+
+    <p id="saludo"></p>
+
+
+    <!-- BOTÓN MÚSICA -->
+    <button onclick="controlMusica()">Reproducir música</button>
+
+    <!-- AUDIO -->
+    <audio id="musica" loop>
+        <source src="musica/Luis Miguel.mp3" type="audio/mpeg">
+    </audio>
+
+<script src="script.js"></script>
+<script>
+    const cantidadNieve = 40;
+
+    for (let i = 0; i < cantidadNieve; i++) {
+        let nieve = document.createElement("div");
+        nieve.className = "nieve";
+        nieve.style.left = Math.random() * 100 + "vw";
+        nieve.style.animationDuration = 3 + Math.random() * 5 + "s";
+        nieve.style.opacity = Math.random();
+        nieve.style.fontSize = 10 + Math.random() * 20 + "px";
+        document.body.appendChild(nieve);
+    }
+</script>
+
+</body>
+</html>
+
